@@ -1,0 +1,226 @@
+import React from 'react';
+import { Button, Card, Form } from 'react-bootstrap';
+
+const TicketFilteringFormAltered = () => {
+  return (
+    <Card >
+
+    </Card>
+  );
+};
+
+const TicketFilteringForm = () => {
+  return (
+    <Card className="shadow-none shadow-show-xl scrollbar">
+      <Card.Header className="bg-body-tertiary d-none d-xl-block">
+        <h6 className="mb-0">Filter</h6>
+      </Card.Header>
+      <Card.Body>
+        <Form>
+          <div className="mb-2 mt-n2">
+            <Form.Label className="mb-1 fs-10">Priority</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Urgent</option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Source</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Westwood Mall</option>
+              <option>Portal</option>
+              <option>Email</option>
+            </Form.Select>
+          </div>
+
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Status</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Applied</option>
+              <option>In-Review</option>
+              <option>Closed</option>
+              <option>Interviewing</option>
+              <option>Onboarded</option>
+            </Form.Select>
+          </div>
+
+
+
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Category</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Executive</option>
+              <option>Managerial</option>
+              <option>Technical</option>
+              <option>Sales</option>
+              <option>Accounting</option>
+              <option>Creative</option>
+              <option>Administrative</option>
+              <option>Legal</option>
+              <option>Marketing</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Skills Tags</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>React</option>
+              <option>Node.JS</option>
+              <option>Spring Boot</option>
+              <option>Hibernate</option>
+              <option>REST</option>
+            </Form.Select>
+          </div>
+          <div>
+            <Form.Label className="mb-1 mt-2 fs-10">Certifications</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Certified EKG Technician (CET)</option>
+              <option>Certified Phlebotomy Technician (CPT)</option>
+              <option>Certified Pharmacy Technician (CPhT)</option>
+              <option>Certified Patient Care Technician (CPCT)</option>
+              <option>AWS Certified Solutions Architect – Associate</option>
+              <option>Certified Cloud Security Professional (CCSP)</option>
+              <option>Cloud Security Alliance: Certificate of Cloud Security Knowledge (CCSK)</option>
+            </Form.Select>
+          </div>
+        </Form>
+      </Card.Body>
+      <Card.Footer className="border-top border-200 py-x1">
+        <Button varient="primary" className="w-100">
+          Update
+        </Button>
+      </Card.Footer>
+    </Card>
+  );
+};
+
+
+const TicketFilteringFormOrig = () => {
+  return (
+    <Card className="shadow-none shadow-show-xl scrollbar">
+      <Card.Header className="bg-body-tertiary d-none d-xl-block">
+        <h6 className="mb-0">Filter</h6>
+      </Card.Header>
+      <Card.Body>
+        <Form>
+          <div className="mb-2 mt-n2">
+            <Form.Label className="mb-1 fs-10">Priority</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Urgent</option>
+              <option>High</option>
+              <option>Medium</option>
+              <option>Low</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Source</Form.Label>
+            <Form.Select defaultValue="Facebook" size="sm">
+              <option>None</option>
+              <option>Email</option>
+              <option>Phone</option>
+              <option>Facebook</option>
+              <option>Twitter</option>
+              <option>Chat</option>
+              <option>Whatsapp</option>
+              <option>Portal</option>
+              <option>Bots</option>
+              <option>External Email</option>
+              <option>Ecommerce</option>
+              <option>Feedback Widget</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Status</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Recent</option>
+              <option>Overdue</option>
+              <option>Closed</option>
+              <option>Remaining</option>
+              <option>Responded</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Group</Form.Label>
+            <Form.Select defaultValue="Billing" size="sm">
+              <option>None</option>
+              <option>My Group</option>
+              <option>Billing</option>
+              <option>Customer Support</option>
+              <option>Enhancement</option>
+              <option>Unassigned</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Agent</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Anindya</option>
+              <option>Nowrin</option>
+              <option>Khalid2</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Type</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Question</option>
+              <option>Incident</option>
+              <option>Problem</option>
+              <option>Feature Request</option>
+              <option>Refund</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Category</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>General Issue</option>
+              <option>Maintenance</option>
+              <option>Engineering</option>
+              <option>Accounts</option>
+              <option>Feedback</option>
+              <option>Support</option>
+              <option>Test Helpdesk</option>
+            </Form.Select>
+          </div>
+          <div className="mb-2">
+            <Form.Label className="mb-1 mt-2 fs-10">Tags</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Sales</option>
+              <option>Request</option>
+              <option>Complaint</option>
+              <option>Feedback</option>
+              <option>Support</option>
+            </Form.Select>
+          </div>
+          <div>
+            <Form.Label className="mb-1 mt-2 fs-10">Subscription</Form.Label>
+            <Form.Select size="sm">
+              <option>None</option>
+              <option>Active</option>
+              <option>Inactive</option>
+              <option>Expired</option>
+              <option>Pending</option>
+            </Form.Select>
+          </div>
+        </Form>
+      </Card.Body>
+      <Card.Footer className="border-top border-200 py-x1">
+        <Button varient="primary" className="w-100">
+          Update
+        </Button>
+      </Card.Footer>
+    </Card>
+  );
+};
+export default TicketFilteringForm;
