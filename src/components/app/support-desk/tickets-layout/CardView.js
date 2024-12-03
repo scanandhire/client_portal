@@ -36,23 +36,7 @@ const CardView = () => {
           </Card>
         </AdvanceTableProvider>
       </Col>
-      <Col xxl={2} xl={3}>
-        {breakpoints.down('xl') ? (
-          <Offcanvas
-            show={show}
-            onHide={handleClose}
-            placement="end"
-            className="dark__bg-card-dark"
-          >
-            <Offcanvas.Header closeButton className="bg-body-tertiary">
-              <h6 className="fs-9 mb-0 fw-semibold">Filter</h6>
-            </Offcanvas.Header>
-            <TicketFilteringForm />
-          </Offcanvas>
-        ) : (
-          <TicketFilteringForm />
-        )}
-      </Col>
+
     </Row>
   );
 };

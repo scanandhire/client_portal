@@ -24,7 +24,7 @@ const TableView = () => {
 
   return (
     <Row className="gx-3">
-      <Col xxl={10} xl={9}>
+      <Col xxl={12} xl={12}>
         <AdvanceTableProvider {...table}>
           <Card>
             <Card.Header className="border-bottom border-200 px-0">
@@ -36,7 +36,8 @@ const TableView = () => {
                 rowClassName="btn-reveal-trigger align-middle"
                 tableProps={{
                   size: 'sm',
-                  className: 'fs-10 mb-0 overflow-hidden'
+                  className: 'fs-10 mb-0 overflow-auto',
+                  style: { width: '100%' }
                 }}
               />
             </Card.Body>
@@ -47,23 +48,7 @@ const TableView = () => {
         </AdvanceTableProvider>
       </Col>
 
-      <Col xxl={2} xl={3}>
-        {breakpoints.down('xl') ? (
-          <Offcanvas
-            show={show}
-            onHide={handleClose}
-            placement="end"
-            className="dark__bg-card-dark"
-          >
-            <Offcanvas.Header closeButton className="bg-body-tertiary">
-              <h6 className="fs-9 mb-0 fw-semibold">Filter</h6>
-            </Offcanvas.Header>
-            <TicketFilteringForm />
-          </Offcanvas>
-        ) : (
-          <TicketFilteringForm />
-        )}
-      </Col>
+
 
 
     </Row>
