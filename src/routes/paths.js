@@ -45,6 +45,7 @@ export default {
   starter: `/${rootPaths.pagesRoot}/starter`,
   error404: `/${rootPaths.errorsRoot}/404`,
   error500: `/${rootPaths.errorsRoot}/500`,
+  userLogin: `/${rootPaths.authRoot}/${rootPaths.authSimpleRoot}/userlogin`,
   simpleLogin: `/${rootPaths.authRoot}/${rootPaths.authSimpleRoot}/login`,
   simpleRegister: `/${rootPaths.authRoot}/${rootPaths.authSimpleRoot}/register`,
   simpleLogout: `/${rootPaths.authRoot}/${rootPaths.authSimpleRoot}/logout`,

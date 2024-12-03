@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import is from 'is_js';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { Chart as ChartJS, registerables } from 'chart.js';
 import { CloseButton } from 'components/common/Toast';
@@ -14,6 +14,7 @@ ChartJS.register(...registerables);
 
 const App = () => {
   const HTMLClassList = document.getElementsByTagName('html')[0].classList;
+  const navigate = useNavigate();
   const {
     config: { navbarPosition }
   } = useAppContext();
@@ -39,6 +40,10 @@ const App = () => {
     }
     return () => HTMLClassList.remove('double-top-nav-layout');
   }, [navbarPosition]);
+
+  useEffect(() => {
+    navigate('/authentication/simple/userlogin');
+  }, [navigate]);
 
 
 

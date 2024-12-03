@@ -2,6 +2,7 @@ import React from 'react';
 import App from 'App';
 import paths, { rootPaths } from './paths';
 import { Navigate, createBrowserRouter } from 'react-router-dom';
+import Login from '../components/authentication/Login';
 
 import AuthSimpleLayout from '../layouts/AuthSimpleLayout';
 import MainLayout from '../layouts/MainLayout';
@@ -256,7 +257,11 @@ const routes = [
               {
                 path: paths.simpleLockScreen,
                 element: <SimpleLockScreen />
-              }
+              },
+              {
+                path: paths.userLogin,
+                element: <Login />
+              },
             ]
           },
           {
@@ -1184,5 +1189,6 @@ const routes = [
 export const router = createBrowserRouter(routes, {
   basename: process.env.PUBLIC_URL
 });
+
 
 export default routes;
