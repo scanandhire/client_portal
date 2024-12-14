@@ -10,8 +10,8 @@ const Login = () => {
 
     const navigate = useNavigate();
 
-    const testUser = 'tt';
-    const testPassword = 'tp';
+    const testUser = 'admin';
+    const testPassword = 'password';
 
     const handleLogin = () => {
         if (username === testUser && password === testPassword) {
